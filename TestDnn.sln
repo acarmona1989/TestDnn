@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationServices", "ApplicationServices", "{331B33CD-78A7-4BA3-A757-D01BE62BA4A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDnn.ApplicationServices", "src\TestDnn.ApplicationServices\TestDnn.ApplicationServices.csproj", "{EB91B6F5-087D-44DB-8BA5-320EC61047ED}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "web", "src\web\", "{DCC52D62-A57D-424A-ABFF-3F9A3A56943E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_38990"
+		Debug.AspNetCompiler.PhysicalPath = "src\web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_38990\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_38990"
+		Release.AspNetCompiler.PhysicalPath = "src\web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_38990\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "38990"
+		SlnRelativePath = "src\web\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{A156F1A6-B1D8-4DD1-9F07-EE206CE07FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNNModule", "src\web\DesktopModules\MVC\DNNModule\DNNModule.csproj", "{4130D773-4930-4C21-9BCF-0C5244F585D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNNModule1", "src\web\DesktopModules\MVC\DNNModule1\DNNModule1.csproj", "{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB91B6F5-087D-44DB-8BA5-320EC61047ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB91B6F5-087D-44DB-8BA5-320EC61047ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB91B6F5-087D-44DB-8BA5-320EC61047ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB91B6F5-087D-44DB-8BA5-320EC61047ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC52D62-A57D-424A-ABFF-3F9A3A56943E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC52D62-A57D-424A-ABFF-3F9A3A56943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC52D62-A57D-424A-ABFF-3F9A3A56943E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC52D62-A57D-424A-ABFF-3F9A3A56943E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4130D773-4930-4C21-9BCF-0C5244F585D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4130D773-4930-4C21-9BCF-0C5244F585D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4130D773-4930-4C21-9BCF-0C5244F585D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4130D773-4930-4C21-9BCF-0C5244F585D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB91B6F5-087D-44DB-8BA5-320EC61047ED} = {331B33CD-78A7-4BA3-A757-D01BE62BA4A7}
+		{4130D773-4930-4C21-9BCF-0C5244F585D0} = {A156F1A6-B1D8-4DD1-9F07-EE206CE07FEA}
+		{0AF74FAD-E0F2-4FF8-A2ED-B368A6650238} = {A156F1A6-B1D8-4DD1-9F07-EE206CE07FEA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B15C4B60-8862-4D79-BB9B-371833B1B196}
+	EndGlobalSection
+EndGlobal
