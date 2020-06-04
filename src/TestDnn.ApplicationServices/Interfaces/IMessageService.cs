@@ -1,7 +1,10 @@
-﻿namespace TestDnn.ApplicationServices.Interfaces
+﻿using System.Collections.Generic;
+using TestDnn.Domain.MainContext;
+
+namespace TestDnn.ApplicationServices.Interfaces
 {
     public interface IMessageService
     {
-        string GetMessage();
+        IEnumerable<Message> GetMessages();
     }
 }

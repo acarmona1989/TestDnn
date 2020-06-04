@@ -60,7 +60,10 @@
       <HintPath>..\..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -104,7 +107,7 @@
     <Compile Include="Components\FeatureController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SettingsController.cs" />
-    <Compile Include="Models\Home.cs" />
+    <Compile Include="Models\MessageViewModel.cs" />
     <Compile Include="Models\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -164,6 +167,14 @@
       <Project>{eb91b6f5-087d-44db-8ba5-320ec61047ed}</Project>
       <Name>TestDnn.ApplicationServices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\TestDnn.Domain\TestDnn.Domain.csproj">
+      <Project>{6B8070CF-7AD4-4F77-A4AA-F1357DB3CE5E}</Project>
+      <Name>TestDnn.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\TestDnn.Infrastructure.Data\TestDnn.Infrastructure.Data.csproj">
+      <Project>{BE731304-6B37-4AA7-977B-2D89870D2428}</Project>
+      <Name>TestDnn.Infrastructure.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -178,7 +189,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>42269</DevelopmentServerPort>
           <DevelopmentServerVPath>
           </DevelopmentServerVPath>
           <IISUrl>http://test.dnn.com/desktopmodules/mvc/DNNModule1</IISUrl>

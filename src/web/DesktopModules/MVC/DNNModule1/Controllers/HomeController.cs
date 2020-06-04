@@ -1,5 +1,6 @@
 ﻿using DotNetNuke.Web.Mvc.Framework.Controllers;
 using Planeta.Modules.DNNModule1.Models;
+using System.Linq;
 using System.Web.Mvc;
 using TestDnn.ApplicationServices.Interfaces;
 
@@ -17,11 +18,8 @@ namespace Planeta.Modules.DNNModule1.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var homeModel = new Home
-            {
-                Message = MessageService.GetMessage()
-            };
-            return View(homeModel);
+            var result = MessageService.GetMessages().Select(m => new MessageViewModel { Content = m.Content });
+            return View(result);
         }
     }
 }
