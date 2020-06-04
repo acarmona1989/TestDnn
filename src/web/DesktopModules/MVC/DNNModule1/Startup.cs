@@ -1,6 +1,5 @@
 ﻿using DotNetNuke.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 using TestDnn.ApplicationServices;
 using TestDnn.ApplicationServices.Interfaces;
 using TestDnn.Domain.MainContext;
@@ -14,7 +13,6 @@ namespace Planeta.Modules.DNNModule1
         {
             services.AddTransient<TestDnn.Domain.Interfaces.IRepository<Message>, MessageRepository>();
             services.AddTransient<IMessageService, MessageService>();
-            //services.AddAutoMapper(Assembly.GetAssembly(typeof(Message)));
         }
     }
 }
