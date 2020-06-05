@@ -5,6 +5,6 @@ namespace TestDnn.ApplicationServices.Interfaces
 {
     public interface IMessageService
     {
-        IEnumerable<Message> GetMessages();
+        IEnumerable<TestMessage> GetMessages();
     }
 }

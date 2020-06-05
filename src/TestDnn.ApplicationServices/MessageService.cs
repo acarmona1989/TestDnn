@@ -7,16 +7,16 @@ namespace TestDnn.ApplicationServices
 {
     public class MessageService : IMessageService
     {
-        protected IRepository<Message> MessageRepository { get; }
+        protected IRepository<TestMessage> MessageRepository { get; }
 
-        public MessageService(IRepository<Message> messageRepository)
+        public MessageService(IRepository<TestMessage> messageRepository)
         {
             MessageRepository = messageRepository;
         }
 
-        public IEnumerable<Message> GetMessages()
+        public IEnumerable<TestMessage> GetMessages()
         {
-            return MessageRepository.GetAll();
+            return MessageRepository.Get();
         }
     }
 }

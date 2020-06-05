@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="MainContext\Message.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="MainContext\Entity.cs" />
+    <Compile Include="MainContext\TestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
